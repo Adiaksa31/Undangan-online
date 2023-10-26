@@ -1,0 +1,292 @@
+.isi {
+    display: none;
+}
+
+h1{
+    font-family: 'DM Serif Display', serif;
+}
+h2{
+    font-family: 'Sacramento', cursive;
+    font-size: 50px;
+}
+
+.gold-button {
+    background-color: #D8A528;
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; 
+}
+.gold-button:active {
+    transform: scale(0.95);
+}
+
+.parallax {
+    background-image: url('img/img1.png'); /* Ganti dengan gambar latar belakang Anda */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.parallax-inner {
+    background-color: rgba(0, 0, 0, 0.5); /* Lapisan transparan di atas gambar latar belakang */
+    height: 100vh;
+    width: 100%;
+}
+.parallax1 {
+    background-image: url('img/img2.jpg'); /* Ganti dengan gambar latar belakang Anda */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.parallax-inner1 {
+    background-color: rgba(0, 0, 0, 0.5); /* Lapisan transparan di atas gambar latar belakang */
+    height: 70vh;
+    width: 100%;
+}
+.parallax3{
+    background-image: url('img/img2.jpg'); /* Ganti dengan gambar latar belakang Anda */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.parallax-inner3{
+    background-color: rgba(0, 0, 0, 0.5); /* Lapisan transparan di atas gambar latar belakang */
+    height: 120vh;
+    width: 100%;
+}
+@media (max-width: 767px) {
+    .parallax3{
+  
+        height: 140vh;
+       
+    }
+    
+    .parallax-inner3{
+      
+        height: 140vh;
+        
+    }
+}
+
+.content {
+    background-repeat: no-repeat;
+    background-color: #f4f4f4; /* Warna latar belakang untuk konten */
+}
+.content .row .image img {
+    width: 200px;
+    opacity: 0.4; 
+}
+
+/* Media query untuk mengatur ukuran gambar pada tampilan mobile */
+@media (max-width: 767px) {
+    .content .row .col img {
+        width: 50px; 
+    }
+}
+.or{
+    height: 60px;
+    width: auto;
+}
+@media (max-width: 767px) {
+    .or{
+        height: 30px;
+        width: auto;
+    }
+}
+.content .container{
+    margin-top: -70px;
+}
+@media (max-width: 767px) {
+    .content .container{
+        margin-top: -20px;
+    }
+}
+
+.more-content {
+    background-color: #ffffff; /* Warna latar belakang untuk bagian lebih banyak konten */
+    padding: 50px 0;
+}
+
+.animated-button {
+    position: relative;
+    animation: moveUpDown 2s infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px); /* Ubah jumlah piksel sesuai dengan keinginan Anda */
+    }
+}
+.label{
+    border: 3px solid #D8A528;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+}
+.heart{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(125px);
+}
+.heart i{
+    margin: auto;
+    color: #D8A528;
+}
+@media (max-width: 1200px) {
+    .heart{
+        transform: translateX(-50%) translateY(45px);
+    }
+}
+@media (max-width: 996px) {
+    .heart{
+        display: none;
+    }
+}
+.content .couple img{
+    width: 100%;
+}
+.couple .text{
+    text-align: end;
+}
+@media (max-width: 767px) {
+    .couple .text{
+        text-align: center;
+    }
+}
+@media (max-width: 767px) {
+    .couple .text1{
+        text-align: center;
+    }
+}
+
+.embed-responsive-video {
+    overflow: hidden;
+    border-radius: 15px; 
+    height: 500px;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 50.25%;
+    position: relative;
+    height: 0;
+    background-color: #D8A528;
+}
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.embed-responsive-video iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+.more-content img{
+    transition: transform 0.2s;
+}
+.more-content img:hover{
+    transform: scale(1.1);
+}
+
+.simply-countdown{
+    overflow:hidden;
+    display:table;
+    font-family:'DM Serif Display', serif;
+    font-size: 50px;
+    margin: auto;
+    border-radius: 20px;
+    background:rgba(10, 10, 10, 0.4);
+    color: #D8A528;
+}
+@media (max-width: 767px) {
+    .simply-countdown{
+        font-size: 25px;
+    }
+}
+
+.simply-countdown>.simply-section{
+    width:50px;
+    height:50px;
+    padding:58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    float:left;
+    margin:15px;
+    background:transparent;
+  
+}
+
+    .simply-countdown>.simply-section .simply-amount,.simply-countdown>.simply-section .simply-word{
+        display:block;
+        text-align:center
+    }
+
+.audio-icon-wrapper{
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    opacity: 0.8;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+#komentarList {
+    max-height: 215px;
+    overflow-y: scroll;
+}
+
+.chat-box {
+    background:rgba(10, 10, 10, 0.4);
+    border: 1px solid white;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+}
