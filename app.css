@@ -208,7 +208,7 @@ h2{
     padding-bottom: 50.25%;
     position: relative;
     height: 0;
-    background-color: #D8A528;
+    
 }
 .map-responsive iframe {
     left: 0;
@@ -262,6 +262,15 @@ h2{
     border: 1px solid white;
     border-radius: 20px;
     color: #fff;
-    padding: 10px;
-    margin: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+h6.nama::before,
+h6.nama::after {
+    content: ""; /* Diperlukan untuk elemen pseudo */
+    display: inline-block; /* Ini diperlukan untuk membuat elemen pseudo tampil di samping teks */
+    width: 50px; /* Lebar garis sebelum dan sesudah nama */
+    height: 2px; /* Ketebalan garis */
+    background-color: white; /* Warna garis */
+    margin: 0 10px; /* Jarak antara garis dan teks nama */
 }

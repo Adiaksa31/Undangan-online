@@ -78,8 +78,25 @@ const urlParams = new URLSearchParams(window.location.search);
                 document.getElementById("countdown").innerHTML = "EXPIRED";
             }
         }, 1000);
-
-
+        document.getElementById("salinButton1").addEventListener("click", function() {
+            var textToCopy = "08882"; // Ganti dengan nomor referensi yang sebenarnya
+      
+            navigator.clipboard.writeText(textToCopy).then(function() {
+              alert("Nomor Rekening BRI atas nama disalin ke clipboard.");
+            }).catch(function(err) {
+              console.error("Gagal menyalin ke clipboard: ", err);
+            });
+          });
+      
+          document.getElementById("salinButton2").addEventListener("click", function() {
+            var textToCopy = "08884"; // Ganti dengan nomor referensi yang sebenarnya
+      
+            navigator.clipboard.writeText(textToCopy).then(function() {
+              alert("Nomor Rekening BCA atas nama disalin ke clipboard.");
+            }).catch(function(err) {
+              console.error("Gagal menyalin ke clipboard: ", err);
+            });
+          });
     
 
         "use strict";function _typeof(t){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}!function(t){
