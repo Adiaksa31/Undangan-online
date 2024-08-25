@@ -1,214 +1,215 @@
 .isi {
     display: none;
 }
-
-h1{
+h1 {
     font-family: 'DM Serif Display', serif;
+    -webkit-font-smoothing: antialiased;
 }
-h2{
+h2 {
     font-family: 'Sacramento', cursive;
     font-size: 50px;
+    -webkit-font-smoothing: antialiased;
 }
-
 .gold-button {
     background-color: #D8A528;
-    color: #fff; 
+    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: -webkit-transform 0.3s ease;
     transition: transform 0.3s ease;
     text-decoration: none;
 }
-
-.center-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh; 
-}
 .gold-button:active {
+    -webkit-transform: scale(0.95);
     transform: scale(0.95);
 }
-
+.center-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 10vh;
+}
 .parallax {
-    background-image: url('img/img1.png'); /* Ganti dengan gambar latar belakang Anda */
+    background-image: url('img/img1.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 100vh;
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-justify-content: center;
     justify-content: center;
     text-align: center;
     color: white;
 }
 .parallax-inner {
-    background-color: rgba(0, 0, 0, 0.5); /* Lapisan transparan di atas gambar latar belakang */
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100vh;
     width: 100%;
 }
 .parallax1 {
-    background-image: url('img/img2.jpg'); /* Ganti dengan gambar latar belakang Anda */
+    background-image: url('img/img2.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 70vh;
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-justify-content: center;
     justify-content: center;
     text-align: center;
     color: white;
 }
-
 .parallax-inner1 {
-    background-color: rgba(0, 0, 0, 0.5); /* Lapisan transparan di atas gambar latar belakang */
+    background-color: rgba(0, 0, 0, 0.5);
     height: 70vh;
     width: 100%;
 }
-.parallax3{
-    background-image: url('img/img2.jpg'); /* Ganti dengan gambar latar belakang Anda */
+.parallax3 {
+    background-image: url('img/img2.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 120vh;
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-justify-content: center;
     justify-content: center;
     text-align: center;
     color: white;
 }
-
-.parallax-inner3{
-    background-color: rgba(0, 0, 0, 0.5); /* Lapisan transparan di atas gambar latar belakang */
+.parallax-inner3 {
+    background-color: rgba(0, 0, 0, 0.5);
     height: 120vh;
     width: 100%;
 }
 @media (max-width: 767px) {
-    .parallax3{
-  
-        height: 150vh;
-       
+    .parallax {
+        height: auto;
+        min-height: 100vh;
+        background-attachment: scroll;
     }
-    
-    .parallax-inner3{
-      
+    .parallax3 {
         height: 150vh;
-        
+    }
+    .parallax-inner3 {
+        height: 150vh;
     }
 }
-
 .content {
     background-repeat: no-repeat;
-    background-color: #f4f4f4; /* Warna latar belakang untuk konten */
+    background-color: #f4f4f4;
 }
 .content .row .image img {
     width: 200px;
-    opacity: 0.4; 
+    opacity: 0.4;
 }
-
-/* Media query untuk mengatur ukuran gambar pada tampilan mobile */
 @media (max-width: 767px) {
     .content .row .col img {
-        width: 50px; 
+        width: 50px;
     }
 }
-.or{
+.or {
     height: 60px;
     width: auto;
 }
 @media (max-width: 767px) {
-    .or{
+    .or {
         height: 30px;
         width: auto;
     }
 }
-.content .container{
+.content .container {
     margin-top: -70px;
 }
 @media (max-width: 767px) {
-    .content .container{
+    .content .container {
         margin-top: -20px;
     }
 }
-
 .more-content {
-    background-color: #ffffff; /* Warna latar belakang untuk bagian lebih banyak konten */
+    background-color: #ffffff;
     padding: 50px 0;
 }
-
 .animated-button {
     position: relative;
+    -webkit-animation: moveUpDown 2s infinite alternate;
     animation: moveUpDown 2s infinite alternate;
 }
-
 @keyframes moveUpDown {
     0% {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-20px); /* Ubah jumlah piksel sesuai dengan keinginan Anda */
+        transform: translateY(-20px);
     }
 }
-.label{
+.label {
     border: 3px solid #D8A528;
     border-radius: 30px;
     padding: 10px;
     text-align: center;
 }
-.heart{
+.heart {
     width: 50px;
     height: 50px;
     background-color: white;
+    display: -webkit-flex;
     display: flex;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%) translateY(125px);
 }
-.heart i{
+.heart i {
     margin: auto;
     color: #D8A528;
 }
 @media (max-width: 1200px) {
-    .heart{
-        transform: translateX(-50%) translateY(45px);
+    .heart {
+        transform: translateX(-50%) translateY(75px);
     }
 }
 @media (max-width: 996px) {
-    .heart{
+    .heart {
         display: none;
     }
 }
-.content .couple img{
+.content .couple img {
     width: 100%;
 }
-.couple .text{
+.couple .text {
     text-align: end;
 }
 @media (max-width: 767px) {
-    .couple .text{
+    .couple .text {
+        text-align: center;
+    }
+    .couple .text1 {
         text-align: center;
     }
 }
-@media (max-width: 767px) {
-    .couple .text1{
-        text-align: center;
-    }
-}
-
 .embed-responsive-video {
     overflow: hidden;
-    border-radius: 15px; 
+    border-radius: 15px;
     height: 500px;
 }
-
 .map-responsive {
     overflow: hidden;
     padding-bottom: 50.25%;
     position: relative;
     height: 0;
-    
 }
 .map-responsive iframe {
     left: 0;
@@ -217,29 +218,27 @@ h2{
     width: 100%;
     position: absolute;
 }
-
 .embed-responsive-video iframe {
     border: 0;
     width: 100%;
     height: 100%;
 }
-.more-content img{
+.more-content img {
     transition: transform 0.2s;
 }
-.more-content img:hover{
+.more-content img:hover {
     transform: scale(1.1);
 }
-
-.cards{
-    overflow:hidden;
-    font-family:'DM Serif Display', serif;
+.cards {
+    overflow: hidden;
+    font-family: 'DM Serif Display', serif;
     font-size: 50px;
     border-radius: 20px;
-    background:rgba(10, 10, 10, 0.4);
+    background: rgba(10, 10, 10, 0.4);
     color: #D8A528;
+    -webkit-font-smoothing: antialiased;
 }
-
-.audio-icon-wrapper{
+.audio-icon-wrapper {
     width: 2rem;
     height: 2rem;
     font-size: 2rem;
@@ -251,26 +250,27 @@ h2{
     color: white;
     mix-blend-mode: difference;
 }
-
 #komentarList {
     max-height: 215px;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
-
 .chat-box {
-    background:rgba(10, 10, 10, 0.4);
+    background: rgba(10, 10, 10, 0.4);
     border: 1px solid white;
     border-radius: 20px;
     color: #fff;
     padding: 5px;
     margin: 10px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 h6.nama::before,
 h6.nama::after {
-    content: ""; /* Diperlukan untuk elemen pseudo */
-    display: inline-block; /* Ini diperlukan untuk membuat elemen pseudo tampil di samping teks */
-    width: 50px; /* Lebar garis sebelum dan sesudah nama */
-    height: 2px; /* Ketebalan garis */
-    background-color: white; /* Warna garis */
-    margin: 0 10px; /* Jarak antara garis dan teks nama */
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    margin: 0 10px;
 }
